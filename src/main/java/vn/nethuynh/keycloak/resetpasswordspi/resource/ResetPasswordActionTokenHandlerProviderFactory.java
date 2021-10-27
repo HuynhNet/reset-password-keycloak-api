@@ -6,22 +6,22 @@ import org.keycloak.authentication.actiontoken.ActionTokenHandlerFactory;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 
-public class AutoLoginActionTokenHandlerProviderFactory implements ActionTokenHandlerFactory<AutoLoginActionToken>{
+public class ResetPasswordActionTokenHandlerProviderFactory implements ActionTokenHandlerFactory<ResetPasswordActionToken>{
 
-    private static final String AUTO_LOGIN_PROVIDER_ID = AutoLoginActionToken.AUTO_LOGIN_TOKEN_TYPE;
+    private static final String RESET_PASSWORD_PROVIDER_ID = ResetPasswordActionToken.RESET_PASSWORD_TOKEN_TYPE;
 
     @Override
     public void close() {
     }
 
     @Override
-    public ActionTokenHandler<AutoLoginActionToken> create(KeycloakSession arg0) {
+    public ActionTokenHandler<ResetPasswordActionToken> create(KeycloakSession arg0) {
         return null;
     }
 
     @Override
     public String getId() {
-        return AUTO_LOGIN_PROVIDER_ID;
+        return RESET_PASSWORD_PROVIDER_ID;
     }
 
     @Override
